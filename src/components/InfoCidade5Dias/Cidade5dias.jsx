@@ -32,7 +32,7 @@ function Cidade5dias({ cfg }) {
                     <p>{converterData(x)}</p>
                     <img src={`http://openweathermap.org/img/wn/${x.weather[0].icon}.png`} />
                     <p className='txtDescription'>{x.weather[0].description}</p>
-                    <p>{Math.round(x.main.temp_min)}ºC / {Math.round(x.main.temp_max)}ºC</p>
+                    <p>{Math.round(x.main.temp)}ºC</p>
                 </div>
             ))}
         </div>

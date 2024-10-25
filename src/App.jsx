@@ -23,9 +23,10 @@ function App() {
     const api5dias = await axios.get(URL5dias)
     setCidade5dias(api5dias.data);
   
-    console.log(api5dias)
+    console.log('api5dias:',api5dias)
     const apiInfo = await axios.get(URL)
     setDadosCidade(apiInfo.data)
+    console.log('data: ',apiInfo.data)
     } catch (error) {
       setModal(true)
     }
